@@ -584,8 +584,8 @@ footer {
     }
     #contato{
         padding-top: 3.7rem;
-        padding-right: 3rem;
-        padding-left: 3rem;
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
     }
     .contato-info{
         padding: 0;
@@ -595,6 +595,10 @@ footer {
     }
     #contato textarea{
         padding-bottom: 5rem;
+    }
+    .subtitulo-contato{
+        font-size: 12.3px;
+        margin-bottom: 15px;
     }
 }
 
