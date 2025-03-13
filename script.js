@@ -46,3 +46,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+//CARROSSEL
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3, // Padrão para telas pequenas (até 600px)
+    spaceBetween: 0, // Remove espaços entre as imagens
+    loop: true,
+    autoplay: {
+        delay: 1300,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        601: { slidesPerView: 3}, // Até 767px exibe 3 imagens
+        800: { slidesPerView: 3}, // Acima de 768px exibe 4 imagens
+        1200: {slidesPerView: 5},
+        1700: {slidesPerView: 6},
+    }
+});
