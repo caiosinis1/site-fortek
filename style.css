@@ -593,6 +593,9 @@ footer {
     .contato-info p{
         font-size: 11px;
     }
+    #contato textarea{
+        padding-bottom: 5rem;
+    }
 }
 
 @media(min-width:768px) and (max-width:1024px){
@@ -707,5 +710,16 @@ footer {
     #produtos{
         padding-left: 1rem;
         padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+    .tab-btn{
+        font-size: 12.4px;
+    }
+    .product-card h3{
+        font-size: .8rem;
+    }
+    .product-card .btn{
+        font-size: 10.7px;
+        padding: 4px 6px;
     }
 }
