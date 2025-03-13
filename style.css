@@ -478,14 +478,14 @@ footer {
     }
     nav{
         width: 75%;
-        margin-left: 14%;
+        margin-left: 10%;
         margin-right: 0;
     }
     .nav-links{
         gap: 8px;
     }
     .logo img{
-        height: 18px;
+        height: 12px;
     }
     nav ul li{
         font-size: 12px;
@@ -494,11 +494,15 @@ footer {
     #btn-orcamento-header{
         display: none;
     }
+    .links-inicio{
+        padding: 5px 10px;
+        font-size: 11px;
+    }
 
     /* Ajuste da seção inicial */
     #inicio {
         flex-direction: column;
-        padding-top: 115px;
+        padding-top: 5rem;
         text-align: center;
         padding-bottom: 2rem;
         align-items: center;
@@ -510,8 +514,8 @@ footer {
     .container {
         flex-direction: column;
         text-align: center;
-        width: 95%;
-        padding-left: 1.85rem;
+        width: 100%;
+        padding-left: 1.2rem;
         justify-content: center;
         align-items: center;
     }
@@ -579,10 +583,15 @@ footer {
         gap: 20px;
     }
     #contato{
-        padding-top: 5rem;
+        padding-top: 3.7rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
     }
     .contato-info{
         padding: 0;
+    }
+    .contato-info p{
+        font-size: 11px;
     }
 }
 
