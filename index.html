@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortek - Blocos de Concreto Celular</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logotipo.png  " type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logotipo.png" alt="Fortek Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#vantagens">Vantagens</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <a href="#orcamento" class="btn" id="btn-orcamento-header">Solicitar Orçamento</a>
+        </nav>
+    </header>
+    
+    
+    <!-- Seção Início -->
+    <section id="inicio">
+        <div class="container">
+            <div class="text">
+                <h1 id="titulo-inicio">Blocos de Concreto Celular de Alta Qualidade</h1>
+                <p>Construções mais leves, eficientes e sustentáveis com os blocos da Fortek.</p>
+                <div class="buttons">
+                    <a href="#produtos" class="links-inicio">Nossos Produtos</a>
+                    <a href="#" class="links-inicio" style="margin-left: 5px;">Fale Conosco</a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="bloco.png" alt="Bloco de Concreto Celular">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Vantagens -->
+    <section id="vantagens">
+        <h2>Por que escolher blocos de concreto celular?</h2>
+        <p id="vantagem-paragrafo">Os blocos de concreto celular da Fortek oferecem diversas vantagens em relação aos métodos construtivos tradicionais.</p>
+        <div class="vantagens-list">
+            <div class="vantagem-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Isolamento Térmico</h3>
+                <p>Reduz significativamente a transferência de calor, proporcionando maior conforto térmico.</p>
+            </div>
+            <div class="vantagem-item">
+                <i class="fa-solid fa-cube"></i>
+                <h3>Leveza</h3>
+                <p>Até 50% mais leve que blocos convencionais, facilitando o transporte e reduzindo a carga estrutural.</p>
+            </div>
+            <div class="vantagem-item">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Sustentabilidade</h3>
+                <p>Produzido com materiais recicláveis e com menor consumo energético durante a fabricação.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de Produtos -->
+<section id="produtos">
+    <h2>Nossos Produtos</h2>
+    <p>Conheça nossa linha completa de blocos de concreto celular para diferentes aplicações.</p>
+
+    <!-- Menu de Categorias -->
+    <div class="tab-menu">
+        <button class="tab-btn active" onclick="mostrarProdutos('estrutural')">Estrutural</button>
+        <button class="tab-btn" onclick="mostrarProdutos('vedacao')">Vedação</button>
+        <button class="tab-btn" onclick="mostrarProdutos('especiais')">Especiais</button>
+    </div>
+
+    <!-- Lista de Produtos (Exibindo os Produtos Aqui) -->
+    <div class="product-list" id="product-container">
+        <!-- Produtos estruturais -->
+        <div class="product-card estrutural">
+            <img src="bloco1.png" alt="Bloco Estrutural 14x19x39">
+            <h3>Bloco Estrutural 14x19x39</h3>
+            <a href="#" class="btn">Ver Detalhes</a>
+        </div>
+
+        <div class="product-card estrutural">
+            <img src="bloco2.png" alt="Bloco Estrutural 19x19x39">
+            <h3>Bloco Estrutural 19x19x39</h3>
+            <a href="#" class="btn">Ver Detalhes</a>
+        </div>
+
+        <div class="product-card estrutural">
+            <img src="bloco3.png" alt="Bloco Estrutural 12x19x39">
+            <h3>Bloco Estrutural 12x19x39</h3>
+            <a href="#" class="btn">Ver Detalhes</a>
+        </div>
+
+        <div class="product-card estrutural">
+            <img src="bloco4.png" alt="Bloco Estrutural 20x20x40">
+            <h3>Bloco Estrutural 20x20x40</h3>
+            <a href="#" class="btn">Ver Detalhes</a>
+        </div>
+
+        <!-- Produtos de Vedação -->
+        <div class="product-card vedacao" style="display: none;">
+            <img src="vedacao1.png" alt="Bloco Vedação 10x30x60">
+            <h3>Bloco Vedação 10x30x60</h3>
+            <a href="#" class="btn">Ver Detalhes</a>
+        </div>
+
+        <div class="product-card vedacao" style="display: none;">
+            <img src="vedacao2.png" alt="Bloco Vedação 15x30x60">
+            <h3>Bloco Vedação 15x30x60</h3>
+            <a href="#" class="btn">Ver Detalhes</a>
+        </div>
+
+        <!-- Produtos Especiais -->
+        <div class="product-card especiais" style="display: none;">
+            <img src="especial1.png" alt="Bloco Especial 10x40x60">
+            <h3>Bloco Especial 10x40x60</h3>
+            <a href="#" class="btn">Ver Detalhes</a>
+        </div>
+
+        <div class="product-card especiais" style="display: none;">
+            <img src="especial2.png" alt="Bloco Especial 20x40x60">
+            <h3>Bloco Especial 20x40x60</h3>
+            <a href="#" class="btn">Ver Detalhes</a>
+        </div>
+    </div>
+</section>
+    
+   <!-- Seção Contato -->
+   <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p class="subtitulo-contato">Tem dúvidas ou precisa de mais informações? Nossa equipe está pronta para ajudar.</p>
+        <div class="contato-container">
+            <div class="contato-info">
+                <h3>Informações de Contato</h3>
+                <p><i class="fas fa-phone-alt"></i> <strong>Telefone:</strong> (11) 9999-9999</p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> contato@fortek.com.br</p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> Av. Paulista, 1000 - São Paulo/SP</p>
+            </div>
+            <form>
+                <h3>Envie-nos uma Mensagem</h3>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+<!-- Rodapé -->
+<footer>
+    <div class="footer-left">
+        <img src="logoSemFundo.png" alt="Fortek Logo">
+    </div>
+    
+    <div class="footer-nav">
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#vantagens">Vantagens</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </div>
+</footer>
+
+<div class="footer-bottom">
+    <p>&copy; 2025 Fortek. Todos os direitos reservados.</p>
+</div>
+
+
+</body>
+</html>
