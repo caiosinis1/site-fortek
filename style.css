@@ -25,6 +25,7 @@ body {
     line-height: 1.6;
     width: 100vw;
     height: auto;
+    overflow-x: hidden;
 }
 
 /* Cabeçalho */
@@ -149,6 +150,10 @@ section {
 #produtos {
     text-align: center;
     padding: 60px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* Título da seção */
@@ -159,31 +164,38 @@ section {
 }
 
 /* Menu de Categorias */
-.tab-menu {
+.container-btn {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin: 20px auto;
-    max-width: 600px; /* Mantém o tamanho adequado */
+    gap: 10px; /* Espaço entre os botões */
+    width: 80%;
+    background-color: #e2eafc75;
+    padding: 8px;
+    border-radius: 8px;
 }
 
-.tab-btn {
-    flex: 1;
-    background: #E3E9F3;
-    border: none;
+.botao-tab {
     padding: 10px 20px;
-    font-size: 1rem;
+    border: 1px solid transparent;
+    background:none; 
+    color: #1b4eb6;
     font-weight: bold;
-    color: #0D47A1;
     cursor: pointer;
-    transition: background 0.3s ease-in-out;
-    border-radius: 5px;
+    transition: 0.3s;
+    border-radius: 8px;
+    min-width: 150px; 
+    text-align: center;
 }
 
-.tab-btn.active {
-    background: #0D47A1;
-    color: white;
+.botao-tab:hover{
+    background-color: white;
 }
+
+.botao-tab.ativo {
+    background-color: rgb(255, 255, 255); 
+}
+
+
 
 /* Grid de Produtos (Substituindo o Carrossel) */
 .product-list {

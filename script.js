@@ -64,3 +64,13 @@ var swiper = new Swiper(".mySwiper", {
         1700: {slidesPerView: 6},
     }
 });
+
+
+//CATEGORIAS
+function selecionar(elemento) {
+    // Remove a classe 'ativo' de todos os botões
+    document.querySelectorAll('.botao-tab').forEach(botao => botao.classList.remove('ativo'));
+
+    // Adiciona a classe 'ativo' apenas ao botão clicado
+    elemento.classList.add('ativo');
+}
